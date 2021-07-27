@@ -1,0 +1,63 @@
+.arrow-right {
+  width: 12px;
+  height: 10px;
+}
+
+.group-icon {
+  height: 38px;
+}
+
+.star-icon {
+  width: 19px;
+  height: 19px;
+}
+
+.opinion {
+  width: 32px;
+  height: 32px;
+}
+.circle-square {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-play {
+  width: 24px;
+  height: 29px;
+  @media (max-width: $max-xs + px) {
+    width: 18px;
+    height: 29px * 18px / 24px;
+  }
+}
+
+.checkbox {
+  width: 16px;
+  height: 11px;
+}
+
+.call-icon {
+  height: 72px;
+  width: 72px;
+}
+.map-icon {
+  width: 51px;
+  height: 67px;
+}
+
+.message-icon {
+  width: 72px;
+  height: 55px;
+}
+
+.twitter-icon {
+  width: 24px;
+  height: 20px;
+}
+.instagram-icon {
+  width: 24px;
+  height: 24px;
+}
+.facebook-icon {
+  width: 23px;
+  height: 23px;
+}

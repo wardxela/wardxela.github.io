@@ -1,0 +1,100 @@
+.contacts {
+  min-height: 100vh;
+  .container {
+    min-height: inherit;
+  }
+  &__container {
+    min-height: inherit;
+    padding: 112px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+  }
+
+  &__description {
+    margin-bottom: 80px;
+  }
+
+  &__row {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    @media (max-width: $max-lg + px) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+    @media (min-width: $min-sm + px) {
+      align-items: center;
+    }
+  }
+}
+
+.contacts-card {
+  background: var(--light-background-color);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ._icon {
+    margin-bottom: 15px;
+  }
+  &__email {
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 171%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    font-size: 16 / $base-fz * 1em;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: var(--text-color);
+    margin: 15px 0;
+  }
+
+  &__btn {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--light-text-color);
+    }
+  }
+  @media (min-width: $min-xl + px) {
+    flex: 0 1 328px;
+  }
+  @media (max-width: $max-xs + px) {
+    padding: 30px 15px;
+  }
+  &_main {
+    padding: 80px 50px;
+    background-color: var(--primary-color);
+    .contacts-card {
+      &__email,
+      &__title,
+      &__btn {
+        color: var(--light-text-color);
+      }
+      &__btn {
+        border-color: var(--light-text-color);
+        &:hover {
+          background-color: var(--light-background-color);
+          color: var(--primary-color);
+        }
+      }
+    }
+    @media (max-width: $max-xs + px) {
+      padding: 50px 15px;
+    }
+  }
+}

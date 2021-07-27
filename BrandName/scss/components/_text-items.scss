@@ -1,0 +1,58 @@
+.logo {
+  font-weight: bold;
+  font-size: 24 / $base-fz * 1em;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  transition: 0.15s ease;
+  &:hover,
+  &:focus {
+    color: #ccc;
+  }
+}
+
+.link {
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 24 / $base-fz * 1em;
+  letter-spacing: 0.2px;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 58 / $base-fz * 1em;
+  line-height: 138%;
+  letter-spacing: 0.2px;
+  word-break: break-word;
+  @media (max-width: $max-sm + px) {
+    font-size: 4em;
+  }
+  @media (max-width: $max-xs + px) {
+    font-size: 40 / $base-fz * 1em;
+  }
+}
+
+h2.title {
+  font-weight: bold;
+  font-size: 40 / $base-fz * 1em;
+  line-height: 142%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  word-break: break-word;
+  margin-bottom: 10px;
+}
+
+p.paragraph {
+  max-width: 470px;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 143%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  @media (max-width: $max-xs + px) {
+    max-width: 78%;
+  }
+  @media (max-width: 399px) {
+    max-width: 100%;
+  }
+}

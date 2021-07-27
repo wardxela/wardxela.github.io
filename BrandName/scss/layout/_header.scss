@@ -1,0 +1,154 @@
+.header {
+  padding: 19px 0;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__menu {
+    flex-grow: 1;
+  }
+  &__logo {
+  }
+
+  @media (max-width: $max-md + px) {
+    &__container {
+      flex-wrap: wrap;
+    }
+    &__mobile-view {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 0 0 100%;
+    }
+  }
+  @media (min-width: $min-lg + px) {
+    &__menu {
+      margin-left: 83px;
+    }
+  }
+}
+
+.burger {
+  padding: 4px 0;
+  cursor: pointer;
+  &__inner {
+    width: 23px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background-color: #fff;
+    }
+    &::before {
+      width: 100%;
+    }
+    &::after {
+      width: 10 / 23 * 100%;
+    }
+  }
+
+  &__line {
+    width: 17 / 23 * 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  @media (max-width: $max-md + px) {
+  }
+  @media (min-width: $min-lg + px) {
+    display: none;
+  }
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  &__link {
+    display: block;
+    padding: 1px;
+    transition: 0.15s ease;
+    &:focus,
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+    align-items: center;
+    gap: 10px 20px;
+  }
+
+  &__btn {
+  }
+
+  @media (max-width: $max-md + px) {
+    transform: translateY(-25%);
+    transition: transform 200ms ease 100ms, opacity 300ms ease;
+    opacity: 0;
+    &__link {
+      font-size: 1.2em;
+    }
+    height: 0;
+    overflow: hidden;
+    &__nav {
+      padding: 20px 0 10px;
+    }
+    &__btn-container {
+      padding-top: 10px;
+    }
+    &._opened {
+      height: auto;
+      transform: translateY(0);
+      opacity: 1;
+      transition: transform 300ms ease, opacity 200ms ease 100ms;
+    }
+  }
+  @media (max-width: $max-sm + px) {
+    &__link {
+      font-size: 1.5em;
+    }
+    &__btn-container {
+      font-size: 1.2em;
+    }
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  @media (max-width: $max-xs + px) {
+    align-items: center;
+    &__btn-container {
+      flex-direction: column;
+    }
+    &__link {
+      font-size: 30 / $base-fz * 1em;
+    }
+    &__li + &__li {
+      margin-top: 30px;
+    }
+    &__nav {
+      padding: 80px 0 10px;
+    }
+  }
+  @media (min-width: $min-sm + px) {
+    &__list {
+      display: flex;
+      align-items: center;
+    }
+    &__li {
+      + li {
+        margin-left: 20px;
+      }
+    }
+  }
+  @media (min-width: $min-md + px) {
+    &__btn-container {
+      margin-left: auto;
+    }
+  }
+  @media (min-width: $min-lg + px) {
+  }
+}

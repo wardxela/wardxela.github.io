@@ -1,0 +1,52 @@
+.main-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  &__textbox {
+    margin: auto;
+    padding: 40px 40px 140px;
+    @media (max-width: $max-md + px) {
+      padding-bottom: 100px;
+    }
+    @media (max-width: $max-sm + px) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__title {
+    max-width: 681px;
+    margin: 0 auto 40px;
+  }
+
+  &__details {
+    max-width: 539px;
+    margin: 0 auto 40px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+  }
+
+  &__btn-container {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__btn {
+    margin: 0 5px;
+  }
+
+  @media (max-width: $max-xs + px) {
+    &__btn-container {
+      flex-direction: column;
+    }
+    &__btn:first-child {
+      margin-bottom: 25px;
+    }
+    &__details {
+      max-width: 279px;
+    }
+  }
+}

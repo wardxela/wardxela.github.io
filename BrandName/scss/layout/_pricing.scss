@@ -1,0 +1,148 @@
+.pricing {
+  padding: 112px 0 141px;
+  &__container {
+  }
+
+  &__title {
+  }
+
+  &__description {
+    margin: 0 auto 106px;
+  }
+
+  &__card-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media (max-width: $max-sm + px) {
+      gap: 56px;
+    }
+  }
+}
+
+.pricing-card {
+  position: relative;
+  flex: 0 0 327px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 40px;
+  background-color: var(--light-background-color);
+  &_new {
+    &::before {
+      content: 'New';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--alert-color);
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      top: -26px;
+      right: 16.5px;
+      border-radius: 50%;
+      font-weight: bold;
+      font-size: 24 / $base-fz * 1em;
+      letter-spacing: 0.1px;
+      @media (max-width: 399px) {
+        width: 70px;
+        height: 70px;
+        font-size: 1.2em;
+      }
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 24 / $base-fz * 1em;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: var(--text-color);
+    margin-bottom: 35px;
+  }
+
+  &__short-info {
+    font-weight: bold;
+    font-size: 16 / $base-fz * 1em;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: var(--second-text-color);
+    margin-bottom: 35px;
+    text-align: center;
+    max-width: 160px;
+  }
+
+  &__price-block {
+    color: var(--primary-color);
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 40 / $base-fz * 1em;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+
+  &__per-month {
+    color: var(--disabled-element-color);
+    font-size: 16 / 40 * 1em;
+    line-height: 24px / 16px * 100%;
+  }
+
+  &__btn {
+    margin-bottom: 35px;
+    align-self: stretch;
+  }
+  @media (max-width: $max-xs + px) {
+    flex: 1 1 auto;
+    padding: 2/3 * 50px 2/3 * 40px;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+    &__btn {
+      margin-bottom: 20px;
+    }
+    &__short-info {
+      margin-bottom: 20px;
+    }
+    &__price-block {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.pricing-card-list {
+  align-self: flex-start;
+  &__list-item {
+    display: flex;
+    + li {
+      margin-top: 15px;
+    }
+  }
+
+  &__checkbox {
+    flex: 0 0 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--muted-color);
+    &._active {
+      background-color: var(--success-color);
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+}

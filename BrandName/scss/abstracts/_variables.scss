@@ -1,0 +1,12 @@
+// breakpoints
+$min-sm: 576;
+$min-md: 768;
+$min-lg: 992;
+$min-xl: 1050;
+
+$max-xs: $min-sm - 1;
+$max-sm: $min-md - 1;
+$max-md: $min-lg - 1;
+$max-lg: $min-xl - 1;
+
+$base-fz: 14;
