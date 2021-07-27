@@ -1,0 +1,99 @@
+.main-offer {
+  position: relative;
+  padding: 60px 0 90px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 120px;
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+  }
+  &__container {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 27px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease 0s, opacity 0.4s ease 0s;
+    opacity: 0;
+    &._animate {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    max-width: 476px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease 0.2s, opacity 0.4s ease 0.2s;
+    opacity: 0;
+    &._animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &__btn {
+    position: relative;
+    line-height: calc(60 / 18 * 1em);
+    &::before {
+      content: 'Switching to us is simple';
+      left: 0;
+      top: -100%;
+      width: 209px;
+      position: absolute;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24 / 18 * 100%;
+      color: #000000;
+      pointer-events: none;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    @media (min-width: 1300 + px) {
+      transform: translateX(8%);
+    }
+  }
+  @media (max-width: $max-lg + px) {
+    padding: 50px 0 70px;
+    &::before {
+      bottom: 100px;
+    }
+    &__container {
+      flex-direction: column;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__btn {
+      margin-top: 60px;
+    }
+  }
+  @media (min-width: $min-xl + px) {
+    &__col {
+      &_1 {
+        flex: 0 1 483px;
+      }
+      &_2 {
+        flex: 0 1 667px;
+      }
+    }
+  }
+  @media (max-width: $max-md + px) {
+    padding: 20px 0;
+    &::before {
+      bottom: 50px;
+    }
+    &__btn {
+      &::before {
+        top: -80%;
+      }
+    }
+  }
+}

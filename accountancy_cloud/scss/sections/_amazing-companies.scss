@@ -1,0 +1,52 @@
+.amazing-companies {
+  padding: 36px 0;
+  &__container {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__col-2 {
+    margin-left: 120px;
+  }
+
+  &__grid {
+    display: grid;
+    justify-content: space-between;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+  @media (max-width: $max-md + px) {
+    padding: 40px 0;
+
+    &__col-2 {
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: $max-sm + px) {
+    &__container {
+      flex-direction: column;
+    }
+  }
+  @media (min-width: $min-md + px) {
+    &__col-1 {
+      flex: 0 1 250px;
+    }
+  }
+  @media (max-width: $max-xs + px) {
+    &__grid {
+      grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    }
+  }
+}

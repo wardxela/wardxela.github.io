@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import './normalize';
+@import './variables';
+/* Main styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+  color: $main-font-color;
+}
+
+a {
+  color: inherit;
+  color: $link-color;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: bold;
+}
+h1 {
+  font-size: 77px;
+  line-height: 83px / 77px * 100%;
+  color: $main-font-color;
+  @media (max-width: $max-lg + px) {
+    font-size: 60px;
+  }
+  @media (max-width: $max-md + px) {
+    font-size: 50px;
+  }
+  @media (max-width: $max-xs + px) {
+    font-size: 40px;
+  }
+}
+h2 {
+  font-size: 57px;
+  line-height: 58 / 58 * 100%;
+  color: $main-font-color;
+  @media (max-width: $max-lg + px) {
+    font-size: 50px;
+  }
+  @media (max-width: $max-md + px) {
+    font-size: 45px;
+  }
+  @media (max-width: $max-xs + px) {
+    font-size: 40px;
+  }
+}
+h3 {
+  font-size: 28px;
+  line-height: 129%;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 25 / 18 * 100%;
+  color: #ffffff;
+}
+
+p {
+  font-size: 20px;
+  line-height: 31 / 20 * 100%;
+  color: $main-font-color;
+  @media (max-width: $max-xs + px) {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (max-width: $max-lg + px) {
+    max-width: $max-md + px;
+  }
+  @media (max-width: $max-md + px) {
+    max-width: $max-sm + px;
+  }
+  @media (max-width: $max-sm + px) {
+    max-width: $max-xs + px;
+  }
+}
+
+@import './components/blocks';
+@import './sections/header';
+@import './sections/footer';
+@import './sections/main-offer';
+@import './sections/stats';
+@import './sections/reason';
+@import './sections/growth';
+@import './sections/amazing-companies';
+@import './sections/ac-hub';
+@import './sections/card';

@@ -1,0 +1,136 @@
+.header {
+  padding: 27px 0;
+  @media (max-width: $max-lg + px) {
+    padding: 20px 0;
+  }
+  @media (max-width: $max-md + px) {
+    padding: 15px 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.main-menu {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__link {
+    display: block;
+    color: $main-font-color;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 100%;
+    padding: 6px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: transparent;
+      height: 1px;
+      transform: translateY(400%);
+      transition: 0.1s ease;
+    }
+    &:focus {
+      outline: none;
+      &::after {
+        transform: translateY(0);
+        background: #000;
+      }
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        &::after {
+          transform: translateY(0);
+          background: #000;
+        }
+      }
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+    gap: 14px 18px;
+  }
+
+  @media (min-width: $min-xl + px) {
+    &__ul {
+      flex-direction: row;
+    }
+
+    &__link {
+      font-size: 16px;
+    }
+    &__nav {
+      margin-right: 5px;
+    }
+    &__li {
+      margin-right: 14px;
+    }
+  }
+  @media (max-width: $max-lg + px) {
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    position: fixed;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    &__container {
+      transform: translateX(100%);
+      background: #fff;
+      flex-direction: column;
+      height: 100%;
+      width: 40%;
+      margin-left: auto;
+      padding: 75px 25px 25px;
+      transition: transform 0.3s ease-in-out;
+    }
+    &.opened {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    &.opened &__container {
+      transform: translateX(0);
+    }
+    &__nav {
+      margin-bottom: 10px;
+    }
+    &__li {
+      margin-bottom: 15px;
+    }
+    &__btn-container {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: $max-sm + px) {
+    &__container {
+      width: 50%;
+    }
+  }
+  @media (max-width: $max-xs + px) {
+    &__container {
+      padding: 75px 10px 25px;
+
+      width: 70%;
+    }
+  }
+}
+.btn {
+  &_white {
+  }
+}

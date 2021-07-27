@@ -1,0 +1,76 @@
+.card {
+  padding: 108px 0;
+  &__container {
+    overflow: hidden;
+  }
+
+  &__itself {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 90px;
+    background: #8bd4d6;
+    transform: translateX(100%);
+    transition: transform 0.4s ease 0s, opacity 0.4s ease 0s;
+    opacity: 0;
+    &._animate {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  &__text-box {
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: 18px;
+    font-size: 46px;
+    line-height: 56 / 46 * 100%;
+  }
+
+  &__btn {
+    &:hover {
+      background: rgb(0, 0, 0);
+      color: rgb(190, 190, 190);
+    }
+  }
+  @media (max-width: $max-lg + px) {
+    padding: 60px 0;
+  }
+  @media (max-width: $max-md + px) {
+    padding: 40px 0;
+    &__title {
+      font-size: 30px;
+    }
+    &__itself {
+      padding: 50px;
+    }
+  }
+  @media (max-width: $max-sm + px) {
+    &__itself {
+      padding: 30px;
+    }
+    &__title {
+      font-size: 23px;
+    }
+  }
+  @media (max-width: $max-xs + px) {
+    &__itself {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 25px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__text {
+      margin-bottom: 10px;
+    }
+  }
+  @media (min-width: $min-sm + px) {
+    &__btn {
+    }
+  }
+}

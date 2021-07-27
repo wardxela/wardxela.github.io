@@ -1,0 +1,20 @@
+// breakpoints
+$min-sm: 576;
+$min-md: 768;
+$min-lg: 992;
+$min-xl: 1200;
+
+$max-xs: $min-sm - 1;
+$max-sm: $min-md - 1;
+$max-md: $min-lg - 1;
+$max-lg: $min-xl - 1;
+
+// font families
+$main-font: 'Roboto';
+
+// colors
+
+$main-font-color: #000000;
+$sub-font-color: #c5e9ea;
+$link-color: #335c81;
+$light-link-color: #c5e9ea;
