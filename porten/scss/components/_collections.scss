@@ -45,7 +45,7 @@
 .collection {
   &__third-img {
     flex: 0 1 45%;
-    background: center / cover url('../../img/Rectangle\ 9.png') no-repeat;
+    background: center / cover url("../img/Rectangle\ 9.png") no-repeat;
     min-height: 600px;
     @media (max-width: $md4 + px) {
       min-height: 400px;
@@ -86,7 +86,7 @@
 }
 
 .new-collection {
-  background: center / cover url('../../img/Rectangle\ 8.png') no-repeat;
+  background: center / cover url("../img/Rectangle\ 8.png") no-repeat;
   min-height: 730px;
   flex: 0 1 45%;
   display: flex;
