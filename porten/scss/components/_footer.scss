@@ -1,0 +1,22 @@
+.footer {
+  background: #0f0f0f;
+  padding: 17px 0;
+  .container {
+    display: flex;
+  }
+  &__copyright {
+    font-size: 12px;
+    line-height: 16 / 12 * 100%;
+    color: #d0d0d0;
+  }
+
+  &__figma {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16 / 12 * 100%;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #d0d0d0;
+    margin-left: auto;
+  }
+}

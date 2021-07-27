@@ -1,0 +1,64 @@
+.white-line {
+  border: none;
+  width: 120px;
+  height: 1px;
+  background: #fff;
+  margin: 0 auto;
+}
+.product {
+  flex: 0 1 260px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.product-img {
+  display: flex;
+  align-items: center;
+  background: #191b1c;
+  flex: 1 1 auto;
+  padding: 55px 23px;
+  img {
+    max-width: 100%;
+  }
+  margin: 0px 0px 25px 0px;
+}
+.product-name {
+  font-family: Playfair Display;
+  font-size: 18px;
+  line-height: 24 / 18 * 100%;
+  text-align: left;
+  margin: 0px 0px 10px 0px;
+}
+.product-price {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21 / 16 * 100%;
+  color: $light-gray;
+  text-align: left;
+}
+
+.btn {
+  border: 1px solid #ffffff;
+  padding: 12px 28px;
+  font-size: 18px;
+  line-height: 23 / 18 * 100%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background 0.2s ease;
+  &:hover {
+    background: #ffffff1e;
+  }
+  @media (max-width: $md4 + px) {
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+}
+
+.text {
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}

@@ -1,0 +1,57 @@
+.fullscreen {
+  height: 810px;
+  display: flex;
+  background: center / cover url('../../img/first-screen.png');
+  &__box {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__square {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #ffffff;
+    margin-bottom: 80px;
+    @media (max-width: $md3 + px) {
+      width: 300px;
+      height: 300px;
+    }
+    @media (max-width: $md4 + px) {
+      width: 280px;
+      height: 280px;
+    }
+  }
+
+  &__logo {
+    width: 185px;
+    height: auto;
+  }
+
+  &__saint-p {
+    font-size: 22px;
+    line-height: 28 / 22 * 100%;
+    border-top: 2px solid #fff;
+    padding-top: 6px;
+    margin-top: 12px;
+  }
+
+  &__text {
+    max-width: 730px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+    @media (max-width: $md3 + px) {
+      max-width: 500px;
+    }
+    @media (max-width: $md4 + px) {
+      padding: 0 15px;
+      font-size: 14px;
+    }
+  }
+}

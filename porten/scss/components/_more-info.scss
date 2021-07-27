@@ -1,0 +1,119 @@
+.more-info {
+  background: url('../../img/footer.png') center / cover no-repeat;
+  padding: 80px 0px 100px 0px;
+  @media (max-width: $md3 + px) {
+    padding: 60px 0 70px 0;
+  }
+  @media (max-width: $md4 + px) {
+    padding: 40px 0px 40px 0px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0 30px;
+    @media (max-width: $md2 + px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    @media (max-width: $md4 + px) {
+      display: block;
+    }
+  }
+  &__item {
+    @media (max-width: $md4 + px) {
+      margin-bottom: 40px;
+    }
+  }
+  h3 {
+    margin: 0px 0px 40px 0px;
+    @media (max-width: $md3 + px) {
+      margin: 0px 0px 30px 0px;
+    }
+    @media (max-width: $md4 + px) {
+      margin: 0px 0px 20px 0px;
+    }
+  }
+  .text {
+    text-align: left;
+  }
+}
+.categories {
+  &__title {
+  }
+
+  &__row {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    background: #000;
+    padding: 10px 20px;
+    display: block;
+    font-size: 14px;
+    line-height: 150%;
+    color: #d0d0d0;
+    white-space: nowrap;
+    transition: 0.2s ease;
+    &:hover {
+      background: #fff;
+      color: #111;
+    }
+  }
+}
+.distribution {
+  &__title {
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    @media (max-width: $md3 + px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $md4 + px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    @media (max-width: $md4 + px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__input {
+    max-width: 210px;
+    height: 42px;
+    padding: 0 16px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.4);
+    &::placeholder {
+      color: #969696;
+    }
+  }
+
+  &__btn {
+    color: #fff;
+    line-height: 42px;
+    padding: 0 20px;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    background: #0f0f0f;
+    transition: 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      background: #fff;
+      color: #111;
+    }
+  }
+}

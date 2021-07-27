@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@400;700&display=swap');
+@import './normalize';
+@import './variables';
+@import './container';
+/* Main styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  color: #ffffff;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h2,
+h3 {
+  font-family: Playfair Display;
+  font-style: normal;
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48 / 36 * 100%;
+  text-transform: uppercase;
+  @media (max-width: $md4 + px) {
+    font-size: 26px;
+  }
+}
+h3 {
+  font-family: Playfair Display;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32 / 24 * 100%;
+}
+@import './components/blocks';
+@import './components/header';
+@import './components/footer';
+@import './components/fullscreen';
+@import './components/collections';
+@import './components/new-items';
+@import './components/brands';
+@import './components/more-info';

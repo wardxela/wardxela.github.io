@@ -1,0 +1,38 @@
+.new-items {
+  background: #000;
+  padding: 100px 0px 130px 0px;
+  @media (max-width: $md3 + px) {
+    padding: 70px 0px 100px 0px;
+  }
+  @media (max-width: $md4 + px) {
+    padding: 40px 0;
+  }
+  &__title {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 23px;
+  }
+  .white-line {
+    margin-bottom: 60px;
+  }
+  &__product {
+  }
+}
+.container {
+}
+.white-line {
+}
+.product {
+}
+.product-img {
+}
+.product-name {
+}
+.product-price {
+}
