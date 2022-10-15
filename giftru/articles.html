@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <script defer src="./js/script.min.js"></script>
+    <title>Статьи</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+  <nav class="header-top">
+    <div class="container header-top__container">
+      <div class="header-top__menu" data-info-menu>
+        <ul class="header-top__list header-top__info-list">
+          <li class="header-top__item"><a href="#" class="header-top__text">Доставка</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">Оплата</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">О нас</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">Бренды</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">Гарантии и возврат</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">Контакты</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">Помощь</a></li>
+        </ul>
+        <ul class="header-top__list header-top__contacts">
+          <li class="header-top__item"><a href="tel:+74957556983" class="header-top__text header-top__text-with-icon">
+            <svg class="i-phone">
+              <use xlink:href="./img/sprite.svg#phone"></use>
+            </svg>
+            +74957556983
+          </a></li>
+          <li class="header-top__item"><a href="mailto:nonamemag@gmail.com" class="header-top__text header-top__text-with-icon header-top__text-with-icon_center">
+            <svg class="i-mail">
+              <use xlink:href="./img/sprite.svg#mail"></use>
+            </svg>
+            nonamemag@gmail.com
+          </a></li>
+        </ul>
+      </div>
+      <button class="header-top__btn header-top__text" data-info-btn>Информация</button>
+      <ul class="header-top__list header-top__registration">
+        <li class="header-top__item"><a href="./log-in.html" class="header-top__text">Войти</a></li>
+        <li class="header-top__item header-top__separator"><span class="header-top__text">/</span></a></li>
+        <li class="header-top__item"><a href="./registration.html" class="header-top__text">Зарегистрироваться</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="header-bottom">
+    <div class="container header-bottom__container">
+      <a href="/" class="header-bottom__logo">
+        <img src="./img/logo.svg" alt="Gift.ru">
+      </a>
+      <div class="header-bottom-menu__wrapper">
+        <div class="header-bottom-menu">
+          <button class="burger _active header-bottom-menu__burger" data-close-main-menu>
+            <span class="burger__wrapper">
+              <span class="burger__line"></span>
+            </span>
+          </button>
+          <ul class="header-bottom-left-menu">
+            <li class="header-bottom-left-menu__item">
+              <button class="btn btn_orange header-bottom-left-menu__btn" data-catalog-handler>
+                <svg class="i-catalog">
+                  <use xlink:href="./img/sprite.svg#catalog"></use>
+                </svg>
+                <span>Каталог</span>
+              </button>
+            </li>
+            <li class="header-bottom-left-menu__item"><a href="#" class="header-bottom-left-menu__text">Конструктор подарка</a></li>
+            <li class="header-bottom-left-menu__item"><a href="#" class="header-bottom-left-menu__text">Статьи</a></li>
+          </ul>
+          <div class="header-bottom-input">
+            <label class="header-bottom-input__field">
+              <input type="text" id="search-input">
+              <span >Поиск</span>
+            </label>
+            <button class="header-bottom-input__btn">
+              <svg class="i-search">
+                <use xlink:href="./img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="header-bottom-right-menu">
+            <li class="header-bottom-right-menu__item">
+              <a href="#" class="header-bottom-right-menu__icon">
+                <svg class="i-user">
+                  <use xlink:href="./img/sprite.svg#user"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-bottom-right-menu__item">
+              <a href="#" class="header-bottom-right-menu__icon">
+                <svg class="i-star">
+                  <use xlink:href="./img/sprite.svg#star"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-bottom-right-menu__item">
+              <a href="./wishlist.html" class="header-bottom-right-menu__icon">
+                <svg class="i-heart">
+                  <use xlink:href="./img/sprite.svg#heart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-bottom-right-menu__item cart-icon">
+              <a href="./cart.html" class="header-bottom-right-menu__icon">
+                <span class="cart-icon__count">1</span>
+                <svg class="i-cart">
+                  <use xlink:href="./img/sprite.svg#cart"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="burger header-bottom__burger" data-open-main-menu>
+        <span class="burger__wrapper">
+          <span class="burger__line"></span>
+        </span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+      <main class="articles">
+        <div class="container">
+          <div class="articles__container">
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source srcset="./img/animal.webp" type="image/webp" />
+                  <img src="./img/animal.jpg" alt="animal" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source srcset="./img/breakfast.webp" type="image/webp" />
+                  <img src="./img/breakfast.jpg" alt="breakfast" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source srcset="./img/flowers.webp" type="image/webp" />
+                  <img src="./img/flowers.jpg" alt="flowers" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source srcset="./img/freedom.webp" type="image/webp" />
+                  <img src="./img/freedom.jpg" alt="freedom" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source srcset="./img/thinking-man.webp" type="image/webp" />
+                  <img src="./img/thinking-man.jpg" alt="thinking-man" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source
+                    srcset="./img/white-mountains.webp"
+                    type="image/webp"
+                  />
+                  <img src="./img/white-mountains.jpg" alt="white-mountains" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source srcset="./img/custle.webp" type="image/webp" />
+                  <img src="./img/custle.jpg" alt="custle" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source srcset="./img/wake-up.webp" type="image/webp" />
+                  <img src="./img/wake-up.jpg" alt="wake-up" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source srcset="./img/sea.webp" type="image/webp" />
+                  <img src="./img/sea.jpg" alt="sea" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source srcset="./img/clock.webp" type="image/webp" />
+                  <img src="./img/clock.jpg" alt="clock" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source srcset="./img/windy.webp" type="image/webp" />
+                  <img src="./img/windy.jpg" alt="windy" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+            <article class="article-card articles__item">
+              <div class="img-wrapper article-card__img">
+                <picture>
+                  <source
+                    srcset="./img/something-green.webp"
+                    type="image/webp"
+                  />
+                  <img src="./img/something-green.jpg" alt="something-green" />
+                </picture>
+              </div>
+              <div class="article-card__body">
+                <header class="article-card__header">
+                  <h3 class="article-card__title">
+                    Название статьи навзание статьи
+                  </h3>
+                  <date class="article-card__date">25 августа, 2021</date>
+                </header>
+                <p class="article-card__desc">
+                  Современные технологии достигли такого уровня, что граница
+                  обучения...
+                </p>
+                <footer class="article-card__footer">
+                  <div class="article-card__stats">
+                    <div class="article-card__specific">
+                      <svg class="i-eye">
+                        <use xlink:href="./img/sprite.svg#eye"></use>
+                      </svg>
+                      15
+                    </div>
+                    <div class="article-card__specific">
+                      <svg class="i-clock">
+                        <use xlink:href="./img/sprite.svg#clock"></use>
+                      </svg>
+                      6 мин.
+                    </div>
+                  </div>
+                  <a href="#" class="btn_orange article-card__btn">
+                    <svg class="i-right-arrow">
+                      <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+      <section class="pagination pagination_green mb-140">
+        <a href="#" class="pagination__link pagination__prev">
+          <svg class="i-catalog-arrow">
+            <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+          </svg>
+        </a>
+        <a href="#" class="pagination__link _active">1</a>
+        <a href="#" class="pagination__link">2</a>
+        <a href="#" class="pagination__link">3</a>
+        <a href="#" class="pagination__link">4</a>
+        <a href="#" class="pagination__link">5</a>
+        <a href="#" class="pagination__link">6</a>
+        <a href="#" class="pagination__link">7</a>
+        <a href="#" class="pagination__link pagination__next">
+          <svg class="i-catalog-arrow">
+            <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+          </svg>
+        </a>
+      </section>
+      <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer-col footer-col-left">
+      <a href="/" class="footer-left__logo">
+        <img src="./img/logo-white.svg" alt="Gift.ru"
+      /></a>
+      <div class="footer-col-left__bottom">
+        <div class="footer-col-left__cards">
+          <div class="footer-col-left__img-wrapper">
+            <img src="./img/visa.svg" alt="visa" class="footer-col-left__img" />
+          </div>
+          <img
+            src="./img/mastercard.svg"
+            alt="mastercard"
+            class="footer-col-left__img"
+          />
+        </div>
+        <div class="footer-col-left__copyright">©Все права защищены</div>
+      </div>
+    </div>
+    <div class="footer-col footer-col-middle">
+      <div class="footer-col-middle__top">
+        <ul class="footer-list">
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Конструктор подарка</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="./faq.html" class="footer-list__text">Вопрос - ответ</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="./articles.html" class="footer-list__text">Статьи</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Доставка</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Оплата</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">О нас</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Бренды</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Гарантии и возврат</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Контакты</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Помощь</a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="scroll-to-top" data-scroll-to-top>
+        <svg class="i-up-arrow">
+          <use xlink:href="./img/sprite.svg#up-arrow"></use>
+        </svg>
+        <span class="scroll-to-top__text">Вверх</span>
+      </button>
+    </div>
+    <div class="footer-col footer-col-right">
+      <ul class="footer-col-right__nav">
+        <li class="footer-col-right__nav-item">
+          <a href="#" class="footer-col-right__nav-icon">
+            <svg class="i-user">
+              <use xlink:href="./img/sprite.svg#user"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-col-right__nav-item">
+          <a href="#" class="footer-col-right__nav-icon">
+            <svg class="i-star">
+              <use xlink:href="./img/sprite.svg#star"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-col-right__nav-item">
+          <a href="#" class="footer-col-right__nav-icon">
+            <svg class="i-heart">
+              <use xlink:href="./img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-col-right__nav-item cart-icon">
+          <a href="#" class="footer-col-right__nav-icon">
+            <svg class="i-cart">
+              <use xlink:href="./img/sprite.svg#cart"></use>
+            </svg>
+            <span class="cart-icon__count">1</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-col-right-bottom">
+        <a href="tel:+74957556983" class="footer-col-right-bottom__contact">
+          <svg class="i-phone">
+            <use xlink:href="./img/sprite.svg#phone"></use>
+          </svg>
+          +74957556983
+        </a>
+        <a
+          href="mailto:nonamemag@gmail.com"
+          class="footer-col-right-bottom__contact"
+        >
+          <svg class="i-mail">
+            <use xlink:href="./img/sprite.svg#mail"></use>
+          </svg>
+          nonamemag@gmail.com
+        </a>
+        <ul class="footer-col-right-bottom__socials">
+          <li class="footer-col-right-bottom__social-item">
+            <a href="#" class="footer-col-right-bottom__social-link">
+              <svg class="i-inst">
+                <use xlink:href="./img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-col-right-bottom__social-item">
+            <a href="#" class="footer-col-right-bottom__social-link">
+              <svg class="i-fb">
+                <use xlink:href="./img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-col-right-bottom__social-item">
+            <a href="#" class="footer-col-right-bottom__social-link">
+              <svg class="i-vk">
+                <use xlink:href="./img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      <div class="catalog-menu-outer">
+  <div class="catalog-menu-inner">
+    <ul class="catalog-menu">
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-glasses">
+              <use xlink:href="./img/sprite.svg#glasses"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Очки</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item" data-nesting-level="2">
+            <button class="catalog-menu__btn" data-open-sub-catalog>
+              <span class="catalog-menu__text">Очки корригирующие</span>
+              <span class="catalog-menu__arrow">
+                <svg class="i-catalog-arrow">
+                  <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+                </svg>
+              </span>
+            </button>
+            <ul class="catalog-sub-menu">
+              <li class="catalog-menu__item">
+                <a href="#" class="catalog-menu__link">
+                  <span class="catalog-menu__text">
+                    Очки корригирующие +1.0
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-menu__item">
+                <a href="#" class="catalog-menu__link">
+                  <span class="catalog-menu__text">
+                    Очки корригирующие +1.5
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-menu__item">
+                <a href="#" class="catalog-menu__link">
+                  <span class="catalog-menu__text">
+                    Очки корригирующие +2.0
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-menu__item">
+                <a href="#" class="catalog-menu__link">
+                  <span class="catalog-menu__text">
+                    Очки корригирующие +2.5
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-menu__item">
+                <a href="#" class="catalog-menu__link">
+                  <span class="catalog-menu__text">
+                    Очки корригирующие +2.5
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-menu__item catalog-menu__back">
+                <button class="catalog-menu__btn" data-back-to-prev-catalog>
+                  <span class="catalog-menu__text">Назад</span>
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"
+                >Очки для работы за компьютером</span
+              >
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text">Очки солнцезащитные</span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text">Очки для водителей</span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-disposable-tableware">
+              <use xlink:href="./img/sprite.svg#disposable-tableware"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Одноразовая посуда</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Cтаканы </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Тарелки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Бумажные салфетки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-box">
+              <use xlink:href="./img/sprite.svg#box"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Упаковка</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Пакеты подарочные </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Упаковочная бумага </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-palette">
+              <use xlink:href="./img/sprite.svg#palette"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Детское творчество</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Раскраски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-fireworks">
+              <use xlink:href="./img/sprite.svg#fireworks"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Товары для праздника</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Гирлянды </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Воздушные шары </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Свечи на торт </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Открытки поздравительные </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Конверт для денег </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Салфетки бумажные </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-bed">
+              <use xlink:href="./img/sprite.svg#bed"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Домашний текстиль</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-stationery">
+              <use xlink:href="./img/sprite.svg#stationery"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Канцтовары</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-mobile">
+              <use xlink:href="./img/sprite.svg#mobile"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Мультимедиа</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-placemats">
+              <use xlink:href="./img/sprite.svg#placemats"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Плейсматы</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-dishes">
+              <use xlink:href="./img/sprite.svg#dishes"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Посуда</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

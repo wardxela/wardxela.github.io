@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/product-card.js"></script>
+    <title>Карточка товара</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+  <nav class="header-top">
+    <div class="container header-top__container">
+      <div class="header-top__menu" data-info-menu>
+        <ul class="header-top__list header-top__info-list">
+          <li class="header-top__item"><a href="#" class="header-top__text">Доставка</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">Оплата</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">О нас</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">Бренды</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">Гарантии и возврат</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">Контакты</a></li>
+          <li class="header-top__item"><a href="#" class="header-top__text">Помощь</a></li>
+        </ul>
+        <ul class="header-top__list header-top__contacts">
+          <li class="header-top__item"><a href="tel:+74957556983" class="header-top__text header-top__text-with-icon">
+            <svg class="i-phone">
+              <use xlink:href="./img/sprite.svg#phone"></use>
+            </svg>
+            +74957556983
+          </a></li>
+          <li class="header-top__item"><a href="mailto:nonamemag@gmail.com" class="header-top__text header-top__text-with-icon header-top__text-with-icon_center">
+            <svg class="i-mail">
+              <use xlink:href="./img/sprite.svg#mail"></use>
+            </svg>
+            nonamemag@gmail.com
+          </a></li>
+        </ul>
+      </div>
+      <button class="header-top__btn header-top__text" data-info-btn>Информация</button>
+      <ul class="header-top__list header-top__registration">
+        <li class="header-top__item"><a href="./log-in.html" class="header-top__text">Войти</a></li>
+        <li class="header-top__item header-top__separator"><span class="header-top__text">/</span></a></li>
+        <li class="header-top__item"><a href="./registration.html" class="header-top__text">Зарегистрироваться</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="header-bottom">
+    <div class="container header-bottom__container">
+      <a href="/" class="header-bottom__logo">
+        <img src="./img/logo.svg" alt="Gift.ru">
+      </a>
+      <div class="header-bottom-menu__wrapper">
+        <div class="header-bottom-menu">
+          <button class="burger _active header-bottom-menu__burger" data-close-main-menu>
+            <span class="burger__wrapper">
+              <span class="burger__line"></span>
+            </span>
+          </button>
+          <ul class="header-bottom-left-menu">
+            <li class="header-bottom-left-menu__item">
+              <button class="btn btn_orange header-bottom-left-menu__btn" data-catalog-handler>
+                <svg class="i-catalog">
+                  <use xlink:href="./img/sprite.svg#catalog"></use>
+                </svg>
+                <span>Каталог</span>
+              </button>
+            </li>
+            <li class="header-bottom-left-menu__item"><a href="#" class="header-bottom-left-menu__text">Конструктор подарка</a></li>
+            <li class="header-bottom-left-menu__item"><a href="#" class="header-bottom-left-menu__text">Статьи</a></li>
+          </ul>
+          <div class="header-bottom-input">
+            <label class="header-bottom-input__field">
+              <input type="text" id="search-input">
+              <span >Поиск</span>
+            </label>
+            <button class="header-bottom-input__btn">
+              <svg class="i-search">
+                <use xlink:href="./img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="header-bottom-right-menu">
+            <li class="header-bottom-right-menu__item">
+              <a href="#" class="header-bottom-right-menu__icon">
+                <svg class="i-user">
+                  <use xlink:href="./img/sprite.svg#user"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-bottom-right-menu__item">
+              <a href="#" class="header-bottom-right-menu__icon">
+                <svg class="i-star">
+                  <use xlink:href="./img/sprite.svg#star"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-bottom-right-menu__item">
+              <a href="./wishlist.html" class="header-bottom-right-menu__icon">
+                <svg class="i-heart">
+                  <use xlink:href="./img/sprite.svg#heart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-bottom-right-menu__item cart-icon">
+              <a href="./cart.html" class="header-bottom-right-menu__icon">
+                <span class="cart-icon__count">1</span>
+                <svg class="i-cart">
+                  <use xlink:href="./img/sprite.svg#cart"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="burger header-bottom__burger" data-open-main-menu>
+        <span class="burger__wrapper">
+          <span class="burger__line"></span>
+        </span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+      <main class="product-page">
+        <div class="container">
+          <div class="product-page__container">
+            <div class="product-page-slider">
+              <div class="product-page-slider__top">
+                <div class="card__discount product-page-slider__discount">
+                  -40%
+                </div>
+                <button
+                  class="btn-arrow product-page-slider__btn"
+                  data-carousel-btn="-1"
+                  data-corresponding-carousel="product-page-carousel"
+                >
+                  <svg class="i-common-arrow">
+                    <use xlink:href="./img/sprite.svg#common-arrow"></use>
+                  </svg>
+                </button>
+                <div class="product-page-slider__main">
+                  <div
+                    class="product-page-slider__slides"
+                    id="product-page-carousel"
+                    data-carousel-current-slide="1"
+                  >
+                    <div class="img-wrapper product-page-slider__img">
+                      <img src="./img/dog-cup.png" alt="product" />
+                    </div>
+                    <div class="img-wrapper product-page-slider__img">
+                      <img src="./img/dog-cup.png" alt="product" />
+                    </div>
+                    <div class="img-wrapper product-page-slider__img">
+                      <img src="./img/dog-cup.png" alt="product" />
+                    </div>
+                    <div class="img-wrapper product-page-slider__img">
+                      <img src="./img/dog-cup.png" alt="product" />
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="btn-arrow btn-arrow_right product-page-slider__btn"
+                  data-carousel-btn="1"
+                  data-corresponding-carousel="product-page-carousel"
+                >
+                  <svg class="i-common-arrow">
+                    <use xlink:href="./img/sprite.svg#common-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="carousel-nav"
+                data-carousel-nav
+                data-corresponding-carousel="product-page-carousel"
+              ></div>
+            </div>
+            <div class="product-page-content">
+              <section class="breadcrumb">
+                <ul class="breadcrumb__list">
+                  <li class="breadcrumb__item">
+                    <a href="#" class="breadcrumb__link">Главная</a>
+                  </li>
+                  <li class="breadcrumb__item">
+                    <a href="#" class="breadcrumb__link">Дом и сад</a>
+                  </li>
+                  <li class="breadcrumb__item">
+                    <a href="#" class="breadcrumb__link">Декоративная посуда</a>
+                  </li>
+                  <li class="breadcrumb__item">
+                    <a href="#" class="breadcrumb__link _active"
+                      >Тарелка Fabulous</a
+                    >
+                  </li>
+                </ul>
+              </section>
+              <div class="product-page-content-header">
+                <div class="product-page-content-header__main">
+                  <h1 class="title dark product-page-content-header__title">
+                    Кружка PrioritY "Paw Patrol / Щенячий патруль" в подарочной
+                    коробке", 200 мл, 1 шт
+                  </h1>
+                  <div
+                    class="
+                      product-page-content-header__section
+                      product-page-content-header__section-1
+                    "
+                  >
+                    <div class="product-page-content-header__stars">
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                    </div>
+                    <div class="product-page-content-header__stars-count">
+                      189
+                    </div>
+                    <div class="product-page-content-header__code">
+                      Код товара: 2398643Р
+                    </div>
+                  </div>
+                  <div class="product-page-content-header__in-stock">
+                    В наличии: 15 шт
+                  </div>
+                  <div
+                    class="
+                      product-page-content-header__section
+                      product-page-content-header__section-2
+                    "
+                  >
+                    <div class="product-page-content-header__price">212 р.</div>
+                    <div class="card__old-price">4600 p.</div>
+                  </div>
+                  <div class="product-page-content-header__section">
+                    <button
+                      class="btn btn_blue product-page-content-header__btn"
+                    >
+                      Добавить в корзину
+                    </button>
+                    <button
+                      class="
+                        btn btn_blue-transparent
+                        product-page-content-header__btn
+                      "
+                    >
+                      Подарить
+                    </button>
+                  </div>
+                </div>
+                <div class="product-page-content-header__aside">
+                  <div class="product-page-content-header__buttons">
+                    <button class="product-page-content-header__ico-btn">
+                      <svg class="i-star">
+                        <use xlink:href="./img/sprite.svg#star"></use>
+                      </svg>
+                    </button>
+                    <button class="product-page-content-header__ico-btn">
+                      <svg class="i-heart">
+                        <use xlink:href="./img/sprite.svg#heart"></use>
+                      </svg>
+                    </button>
+                    <button class="product-page-content-header__ico-btn">
+                      <svg class="i-share">
+                        <use xlink:href="./img/sprite.svg#share"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <a href="#" class="link-line link-line_green"
+                    >Коллекция: Spider-man</a
+                  >
+                </div>
+              </div>
+              <div class="product-page-content-info">
+                <div class="product-page-content-info__section">
+                  <h4 class="product-page-content-info__title">
+                    Хотите упаковать товар?
+                  </h4>
+                  <div class="product-page-content-info__inner">
+                    <label
+                      class="
+                        product-page-content-info__radio
+                        input-radio input-radio_green
+                      "
+                    >
+                      <input
+                        class="input-radio__input"
+                        type="radio"
+                        name="product-package"
+                        checked
+                      />
+                      <span class="input-radio__icon"></span>
+                      <span class="input-radio__text">Подарочная упаковка</span>
+                    </label>
+                    <label
+                      class="
+                        product-page-content-info__radio
+                        input-radio input-radio_green
+                      "
+                    >
+                      <input
+                        class="input-radio__input"
+                        type="radio"
+                        name="product-package"
+                      />
+                      <span class="input-radio__icon"></span>
+                      <span class="input-radio__text">Лента</span>
+                    </label>
+                    <label
+                      class="
+                        product-page-content-info__radio
+                        input-radio input-radio_green
+                      "
+                    >
+                      <input
+                        class="input-radio__input"
+                        type="radio"
+                        name="product-package"
+                      />
+                      <span class="input-radio__icon"></span>
+                      <span class="input-radio__text">Бантик</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="product-page-content-info__section">
+                  <button
+                    class="product-page-content-info__btn _opened"
+                    data-accordion-handler="product-description"
+                  >
+                    Описание
+                    <svg
+                      class="
+                        i-catalog-arrow
+                        product-page-content-info__btn-arrow
+                      "
+                    >
+                      <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+                    </svg>
+                  </button>
+                  <div
+                    class="product-page-content-info__accordion"
+                    id="product-description"
+                    data-accordion-opened="1"
+                  >
+                    <div class="product-page-content-info__inner">
+                      <p class="product-page-content-info__text">
+                        Спасатели-щенки Зума, Маршал, Гонщик, Скай, Рокки,
+                        Крепыш и наставник Щенячьего патруля мальчик Райдер ждут
+                        тебя для совершения подвигов! Погрузись в мир
+                        мультсериала «Paw Patrol» с кружкой от компании
+                        PrioritY.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-page-content-info__section">
+                  <button
+                    class="product-page-content-info__btn"
+                    data-accordion-handler="product-characteristic"
+                  >
+                    Характеристика
+                    <svg
+                      class="
+                        i-catalog-arrow
+                        product-page-content-info__btn-arrow
+                      "
+                    >
+                      <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+                    </svg>
+                  </button>
+                  <div
+                    class="product-page-content-info__accordion"
+                    id="product-characteristic"
+                    data-accordion-opened="0"
+                  >
+                    <div class="product-page-content-info__inner">
+                      <p class="product-page-content-info__text">
+                        Спасатели-щенки Зума, Маршал, Гонщик, Скай, Рокки,
+                        Крепыш и наставник Щенячьего патруля мальчик Райдер ждут
+                        тебя для совершения подвигов! Погрузись в мир
+                        мультсериала «Paw Patrol» с кружкой от компании
+                        PrioritY.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-page-content-info__section">
+                  <button
+                    class="product-page-content-info__btn"
+                    data-accordion-handler="product-delivery"
+                  >
+                    Доставка
+                    <svg
+                      class="
+                        i-catalog-arrow
+                        product-page-content-info__btn-arrow
+                      "
+                    >
+                      <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+                    </svg>
+                  </button>
+                  <div
+                    class="product-page-content-info__accordion"
+                    id="product-delivery"
+                    data-accordion-opened="0"
+                  >
+                    <div class="product-page-content-info__inner">
+                      <p class="product-page-content-info__text">
+                        Спасатели-щенки Зума, Маршал, Гонщик, Скай, Рокки,
+                        Крепыш и наставник Щенячьего патруля мальчик Райдер ждут
+                        тебя для совершения подвигов! Погрузись в мир
+                        мультсериала «Paw Patrol» с кружкой от компании
+                        PrioritY.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-page-content-info__section">
+                  <button
+                    class="product-page-content-info__btn"
+                    data-accordion-handler="product-payment"
+                  >
+                    Оплата и возврат
+                    <svg
+                      class="
+                        i-catalog-arrow
+                        product-page-content-info__btn-arrow
+                      "
+                    >
+                      <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+                    </svg>
+                  </button>
+                  <div
+                    class="product-page-content-info__accordion"
+                    id="product-payment"
+                    data-accordion-opened="0"
+                  >
+                    <div class="product-page-content-info__inner">
+                      <p class="product-page-content-info__text">
+                        Спасатели-щенки Зума, Маршал, Гонщик, Скай, Рокки,
+                        Крепыш и наставник Щенячьего патруля мальчик Райдер ждут
+                        тебя для совершения подвигов! Погрузись в мир
+                        мультсериала «Paw Patrol» с кружкой от компании
+                        PrioritY.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="
+                    product-page-content-info__section
+                    product-page-content-info__section_brand
+                  "
+                >
+                  <h6 class="product-page-content-info__title">Бренд:</h6>
+                  <img
+                    class="product-page-content-info__img"
+                    src="./img/PrioritY.png"
+                    alt="Priority"
+                  />
+                  <span class="product-page-content-info__text">PrioritY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section class="may-like mb-140">
+        <div class="container may-like__header">
+          <h2 class="title dark may-like__title">
+            Вам также могут понравиться
+          </h2>
+        </div>
+        <div class="container additional-filter__container may-like__filter">
+          <div class="additional-filter__wrapper">
+            <button class="btn btn_light-orange additional-filter__btn _active">
+              Красота и здоровье
+            </button>
+            <button class="btn btn_light-orange additional-filter__btn">
+              Дом и сад
+            </button>
+            <button class="btn btn_light-orange additional-filter__btn">
+              Одежда и обувь
+            </button>
+            <button class="btn btn_light-orange additional-filter__btn">
+              Электроника
+            </button>
+            <button class="btn btn_light-orange additional-filter__btn">
+              Красота и здоровье
+            </button>
+            <button class="btn btn_light-orange additional-filter__btn">
+              Музыка и видео
+            </button>
+            <button class="btn btn_light-orange additional-filter__btn">
+              Одежда и обувь
+            </button>
+            <button class="btn btn_light-orange additional-filter__btn">
+              Электроника
+            </button>
+            <button class="btn btn_light-orange additional-filter__btn">
+              Красота и здоровье
+            </button>
+            <button class="btn btn_light-orange additional-filter__btn">
+              Музыка и видео
+            </button>
+          </div>
+          <button
+            class="btn btn_light-orange additional-filter__btn"
+            data-show-more-filters
+          >
+            Еще
+          </button>
+        </div>
+        <div class="items-container may-like__slider">
+          <div class="items-container__left">
+            <button
+              class="btn-arrow"
+              data-carousel-btn="-1"
+              data-corresponding-carousel="may-like"
+            >
+              <svg class="i-common-arrow">
+                <use xlink:href="./img/sprite.svg#common-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="items-container-main items-container-main_products">
+            <div
+              id="may-like"
+              class="items-container__slider"
+              data-carousel-current-slide="1"
+            >
+              <article
+                class="card items-container__card"
+                data-product-json='{"title":"Название товара Название товара","stars":3,"reviewsCount":136,"inStock":15,"price":2500,"code":"7698643Р","description":"Современные технологии достигли такого уровня, что граница обучения кадров требует анализа стандартных подходов. В частности, повышение уровня гражданского сознания обеспечивает актуальность","images":["img/cat-dishes.png","img/cat-dishes.png"]}'
+              >
+                <div class="card__section card__header">
+                  <div class="card__fire">
+                    <svg class="i-fire">
+                      <use xlink:href="./img/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <button class="card__like">
+                    <svg class="i-heart">
+                      <use xlink:href="./img/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__img">
+                  <img src="./img/cat-dishes.png" alt="Product" />
+                </div>
+                <h3 class="card__title">Название товара Название товара</h3>
+                <div class="card__section card__mb-10">
+                  <div class="card__count">В наличии 15 шт</div>
+                </div>
+                <div class="card__section card__mb-20">
+                  <div class="card__stars">
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                  </div>
+                  <div class="card__price">2500 р.</div>
+                </div>
+                <button class="btn btn_green card__btn">
+                  Добавить в корзину
+                </button>
+                <button
+                  class="link-line link-line_red card__quick-view"
+                  data-quick-preview=""
+                >
+                  Быстрый просмотр
+                </button>
+              </article>
+              <article
+                class="card items-container__card"
+                data-product-json='{"title":"Название товара Название товара","stars":3,"reviewsCount":136,"inStock":15,"price":2500,"code":"7698643Р","description":"Современные технологии достигли такого уровня, что граница обучения кадров требует анализа стандартных подходов. В частности, повышение уровня гражданского сознания обеспечивает актуальность","images":["img/gravity-falls.png","img/gravity-falls.png","img/gravity-falls.png"]}'
+              >
+                <div class="card__section card__header">
+                  <div class="card__fire">
+                    <svg class="i-fire">
+                      <use xlink:href="./img/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <button class="card__like">
+                    <svg class="i-heart">
+                      <use xlink:href="./img/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__img">
+                  <img src="./img/gravity-falls.png" alt="Product" />
+                </div>
+                <h3 class="card__title">Название товара Название товара</h3>
+                <div class="card__section card__mb-10">
+                  <div class="card__count">В наличии 15 шт</div>
+                </div>
+                <div class="card__section card__mb-20">
+                  <div class="card__stars">
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                  </div>
+                  <div class="card__price">2500 р.</div>
+                </div>
+                <button class="btn btn_green card__btn">
+                  Добавить в корзину
+                </button>
+                <button
+                  class="link-line link-line_red card__quick-view"
+                  data-quick-preview=""
+                >
+                  Быстрый просмотр
+                </button>
+              </article>
+              <article
+                class="card items-container__card"
+                data-product-json='{"title":"Название товара Название товара","stars":3,"reviewsCount":136,"inStock":15,"price":2500,"code":"7698643Р","description":"Современные технологии достигли такого уровня, что граница обучения кадров требует анализа стандартных подходов. В частности, повышение уровня гражданского сознания обеспечивает актуальность","images":["img/cut-the-rope.png", "img/cut-the-rope.png", "img/cut-the-rope.png", "img/cut-the-rope.png","img/cut-the-rope.png"]}'
+              >
+                <div class="card__section card__header">
+                  <div class="card__fire">
+                    <svg class="i-fire">
+                      <use xlink:href="./img/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <button class="card__like">
+                    <svg class="i-heart">
+                      <use xlink:href="./img/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__img">
+                  <img src="./img/cut-the-rope.png" alt="Product" />
+                </div>
+                <h3 class="card__title">Название товара Название товара</h3>
+                <div class="card__section card__mb-10">
+                  <div class="card__count">В наличии 15 шт</div>
+                  <div class="card__old-price">4600 p.</div>
+                </div>
+                <div class="card__section card__mb-20">
+                  <div class="card__stars">
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                  </div>
+                  <div class="card__price">2500 р.</div>
+                </div>
+                <button class="btn btn_green card__btn">
+                  Добавить в корзину
+                </button>
+                <button
+                  class="link-line link-line_red card__quick-view"
+                  data-quick-preview=""
+                >
+                  Быстрый просмотр
+                </button>
+              </article>
+              <article
+                class="card items-container__card"
+                data-product-json='{"title":"Название товара Название товара","stars":3,"reviewsCount":136,"inStock":15,"price":2500,"code":"7698643Р","description":"Современные технологии достигли такого уровня, что граница обучения кадров требует анализа стандартных подходов. В частности, повышение уровня гражданского сознания обеспечивает актуальность","images":["img/super-dogs.png","img/super-dogs.png", "img/super-dogs.png", "img/super-dogs.png"]}'
+              >
+                <div class="card__section card__header">
+                  <div class="card__fire">
+                    <svg class="i-fire">
+                      <use xlink:href="./img/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <button class="card__like">
+                    <svg class="i-heart">
+                      <use xlink:href="./img/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__img">
+                  <img src="./img/super-dogs.png" alt="Product" />
+                </div>
+                <h3 class="card__title">Название товара Название товара</h3>
+                <div class="card__section card__mb-10">
+                  <div class="card__count">В наличии 15 шт</div>
+                </div>
+                <div class="card__section card__mb-20">
+                  <div class="card__stars">
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                  </div>
+                  <div class="card__price">2500 р.</div>
+                </div>
+                <button class="btn btn_green card__btn">
+                  Добавить в корзину
+                </button>
+                <button
+                  class="link-line link-line_red card__quick-view"
+                  data-quick-preview=""
+                >
+                  Быстрый просмотр
+                </button>
+              </article>
+              <article
+                class="card items-container__card"
+                data-product-json='{"title":"Название товара Название товара","stars":3,"reviewsCount":136,"inStock":15,"price":2500,"code":"7698643Р","description":"Современные технологии достигли такого уровня, что граница обучения кадров требует анализа стандартных подходов. В частности, повышение уровня гражданского сознания обеспечивает актуальность","images":["img/fixici.png","img/fixici.png"]}'
+              >
+                <div class="card__section card__header">
+                  <div class="card__fire">
+                    <svg class="i-fire">
+                      <use xlink:href="./img/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <button class="card__like">
+                    <svg class="i-heart">
+                      <use xlink:href="./img/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__img">
+                  <img src="./img/fixici.png" alt="Product" />
+                </div>
+                <h3 class="card__title">Название товара Название товара</h3>
+                <div class="card__section card__mb-10">
+                  <div class="card__count">В наличии 15 шт</div>
+                </div>
+                <div class="card__section card__mb-20">
+                  <div class="card__stars">
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                  </div>
+                  <div class="card__price">2500 р.</div>
+                </div>
+                <button class="btn btn_green card__btn">
+                  Добавить в корзину
+                </button>
+                <button
+                  class="link-line link-line_red card__quick-view"
+                  data-quick-preview=""
+                >
+                  Быстрый просмотр
+                </button>
+              </article>
+              <article
+                class="card items-container__card"
+                data-product-json='{"title":"Название товара Название товара","stars":3,"reviewsCount":136,"inStock":15,"price":2500,"code":"7698643Р","description":"Современные технологии достигли такого уровня, что граница обучения кадров требует анализа стандартных подходов. В частности, повышение уровня гражданского сознания обеспечивает актуальность","images":["img/batman.png","img/batman.png","img/batman.png"]}'
+              >
+                <div class="card__section card__header">
+                  <div class="card__fire">
+                    <svg class="i-fire">
+                      <use xlink:href="./img/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <button class="card__like">
+                    <svg class="i-heart">
+                      <use xlink:href="./img/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__img">
+                  <img src="./img/batman.png" alt="Product" />
+                </div>
+                <h3 class="card__title">Название товара Название товара</h3>
+                <div class="card__section card__mb-10">
+                  <div class="card__count">В наличии 15 шт</div>
+                </div>
+                <div class="card__section card__mb-20">
+                  <div class="card__stars">
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                  </div>
+                  <div class="card__price">2500 р.</div>
+                </div>
+                <button class="btn btn_green card__btn">
+                  Добавить в корзину
+                </button>
+                <button
+                  class="link-line link-line_red card__quick-view"
+                  data-quick-preview=""
+                >
+                  Быстрый просмотр
+                </button>
+              </article>
+              <article
+                class="card items-container__card"
+                data-product-json='{"title":"Название товара Название товара","stars":3,"reviewsCount":136,"inStock":15,"price":2500,"code":"7698643Р","description":"Современные технологии достигли такого уровня, что граница обучения кадров требует анализа стандартных подходов. В частности, повышение уровня гражданского сознания обеспечивает актуальность","images":["img/cut-the-rope.png", "img/cut-the-rope.png", "img/cut-the-rope.png", "img/cut-the-rope.png","img/cut-the-rope.png"]}'
+              >
+                <div class="card__section card__header">
+                  <div class="card__fire">
+                    <svg class="i-fire">
+                      <use xlink:href="./img/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <button class="card__like">
+                    <svg class="i-heart">
+                      <use xlink:href="./img/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__img">
+                  <img src="./img/cut-the-rope.png" alt="Product" />
+                </div>
+                <h3 class="card__title">Название товара Название товара</h3>
+                <div class="card__section card__mb-10">
+                  <div class="card__count">В наличии 15 шт</div>
+                  <div class="card__old-price">4600 p.</div>
+                </div>
+                <div class="card__section card__mb-20">
+                  <div class="card__stars">
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                  </div>
+                  <div class="card__price">2500 р.</div>
+                </div>
+                <button class="btn btn_green card__btn">
+                  Добавить в корзину
+                </button>
+                <button
+                  class="link-line link-line_red card__quick-view"
+                  data-quick-preview=""
+                >
+                  Быстрый просмотр
+                </button>
+              </article>
+              <article
+                class="card items-container__card"
+                data-product-json='{"title":"Название товара Название товара","stars":3,"reviewsCount":136,"inStock":15,"price":2500,"code":"7698643Р","description":"Современные технологии достигли такого уровня, что граница обучения кадров требует анализа стандартных подходов. В частности, повышение уровня гражданского сознания обеспечивает актуальность","images":["img/super-dogs.png","img/super-dogs.png", "img/super-dogs.png", "img/super-dogs.png"]}'
+              >
+                <div class="card__section card__header">
+                  <div class="card__fire">
+                    <svg class="i-fire">
+                      <use xlink:href="./img/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <button class="card__like">
+                    <svg class="i-heart">
+                      <use xlink:href="./img/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__img">
+                  <img src="./img/super-dogs.png" alt="Product" />
+                </div>
+                <h3 class="card__title">Название товара Название товара</h3>
+                <div class="card__section card__mb-10">
+                  <div class="card__count">В наличии 15 шт</div>
+                </div>
+                <div class="card__section card__mb-20">
+                  <div class="card__stars">
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                  </div>
+                  <div class="card__price">2500 р.</div>
+                </div>
+                <button class="btn btn_green card__btn">
+                  Добавить в корзину
+                </button>
+                <button
+                  class="link-line link-line_red card__quick-view"
+                  data-quick-preview=""
+                >
+                  Быстрый просмотр
+                </button>
+              </article>
+              <article
+                class="card items-container__card"
+                data-product-json='{"title":"Название товара Название товара","stars":3,"reviewsCount":136,"inStock":15,"price":2500,"code":"7698643Р","description":"Современные технологии достигли такого уровня, что граница обучения кадров требует анализа стандартных подходов. В частности, повышение уровня гражданского сознания обеспечивает актуальность","images":["img/cut-the-rope.png", "img/cut-the-rope.png", "img/cut-the-rope.png", "img/cut-the-rope.png","img/cut-the-rope.png"]}'
+              >
+                <div class="card__section card__header">
+                  <div class="card__fire">
+                    <svg class="i-fire">
+                      <use xlink:href="./img/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <button class="card__like">
+                    <svg class="i-heart">
+                      <use xlink:href="./img/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__img">
+                  <img src="./img/cut-the-rope.png" alt="Product" />
+                </div>
+                <h3 class="card__title">Название товара Название товара</h3>
+                <div class="card__section card__mb-10">
+                  <div class="card__count">В наличии 15 шт</div>
+                  <div class="card__old-price">4600 p.</div>
+                </div>
+                <div class="card__section card__mb-20">
+                  <div class="card__stars">
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                  </div>
+                  <div class="card__price">2500 р.</div>
+                </div>
+                <button class="btn btn_green card__btn">
+                  Добавить в корзину
+                </button>
+                <button
+                  class="link-line link-line_red card__quick-view"
+                  data-quick-preview=""
+                >
+                  Быстрый просмотр
+                </button>
+              </article>
+              <article
+                class="card items-container__card"
+                data-product-json='{"title":"Название товара Название товара","stars":3,"reviewsCount":136,"inStock":15,"price":2500,"code":"7698643Р","description":"Современные технологии достигли такого уровня, что граница обучения кадров требует анализа стандартных подходов. В частности, повышение уровня гражданского сознания обеспечивает актуальность","images":["img/super-dogs.png","img/super-dogs.png", "img/super-dogs.png", "img/super-dogs.png"]}'
+              >
+                <div class="card__section card__header">
+                  <div class="card__fire">
+                    <svg class="i-fire">
+                      <use xlink:href="./img/sprite.svg#fire"></use>
+                    </svg>
+                  </div>
+                  <button class="card__like">
+                    <svg class="i-heart">
+                      <use xlink:href="./img/sprite.svg#heart"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__img">
+                  <img src="./img/super-dogs.png" alt="Product" />
+                </div>
+                <h3 class="card__title">Название товара Название товара</h3>
+                <div class="card__section card__mb-10">
+                  <div class="card__count">В наличии 15 шт</div>
+                </div>
+                <div class="card__section card__mb-20">
+                  <div class="card__stars">
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                  </div>
+                  <div class="card__price">2500 р.</div>
+                </div>
+                <button class="btn btn_green card__btn">
+                  Добавить в корзину
+                </button>
+                <button
+                  class="link-line link-line_red card__quick-view"
+                  data-quick-preview=""
+                >
+                  Быстрый просмотр
+                </button>
+              </article>
+            </div>
+          </div>
+          <div class="items-container__right">
+            <button
+              class="btn-arrow btn-arrow_right"
+              data-carousel-btn="1"
+              data-corresponding-carousel="may-like"
+            >
+              <svg class="i-common-arrow">
+                <use xlink:href="./img/sprite.svg#common-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          class="carousel-nav"
+          data-carousel-nav
+          data-corresponding-carousel="may-like"
+        ></div>
+      </section>
+      <section class="reviews mb-140">
+        <div class="container">
+          <h2 class="title dark reviews__title">Отзывы покупателей</h2>
+          <div class="reviews__row">
+            <div class="reviews-main">
+              <div class="reviews-main__container scrollbar">
+                <div class="review-card">
+                  <h5 class="review-card__author">Валерий</h5>
+                  <div class="review-card__section">
+                    <div class="review-card__stars">
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                    </div>
+                    <date class="review-card__date">29.03.2021</date>
+                  </div>
+                  <p class="review-card__desc">
+                    Современные технологии достигли такого уровня, что граница
+                    обучения кадров требует анализа стандартных подходов. В
+                    частности, повышение уровня гражданского сознания
+                    обеспечивает
+                  </p>
+                  <div class="review-card__text-box">
+                    <h6 class="review-card__aspect">Достоинства:</h6>
+                    <span class="review-card__text">Цена и качество</span>
+                  </div>
+                  <div class="review-card__text-box">
+                    <h6 class="review-card__aspect">Недостатки:</h6>
+                    <span class="review-card__text">Не обнаружил</span>
+                  </div>
+                  <div class="review-card__text-box">
+                    <h6 class="review-card__aspect">Ссылки:</h6>
+                    <a
+                      href="#"
+                      class="link-line link-line_red review-card__link"
+                      ><span
+                        >https://www.ozon.ru/context/detail/id/162478613/</span
+                      ></a
+                    >
+                  </div>
+                  <button class="review-card__btn">
+                    <svg class="i-response review-card__btn-icon">
+                      <use xlink:href="./img/sprite.svg#response"></use>
+                    </svg>
+                    Ответить
+                  </button>
+                </div>
+                <div class="review-card">
+                  <h5 class="review-card__author">Влад Шопер</h5>
+                  <div class="review-card__section">
+                    <div class="review-card__stars">
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                    </div>
+                    <date class="review-card__date">29.03.2021</date>
+                  </div>
+                  <p class="review-card__desc">
+                    Современные технологии достигли такого уровня, что граница
+                    обучения кадров требует анализа стандартных подходов. В
+                    частности, повышение
+                  </p>
+                  <div class="review-card__text-box">
+                    <h6 class="review-card__aspect">Достоинства:</h6>
+                    <span class="review-card__text">Цена и качество</span>
+                  </div>
+                  <div class="review-card__text-box">
+                    <h6 class="review-card__aspect">Недостатки:</h6>
+                    <span class="review-card__text">Не обнаружил</span>
+                  </div>
+
+                  <button class="review-card__btn">
+                    <svg class="i-response review-card__btn-icon">
+                      <use xlink:href="./img/sprite.svg#response"></use>
+                    </svg>
+                    Ответить
+                  </button>
+                </div>
+                <div class="review-card">
+                  <h5 class="review-card__author">Валерий</h5>
+                  <div class="review-card__section">
+                    <div class="review-card__stars">
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                    </div>
+                    <date class="review-card__date">29.03.2021</date>
+                  </div>
+                  <p class="review-card__desc">
+                    Современные технологии достигли такого уровня, что граница
+                    обучения кадров требует анализа стандартных подходов. В
+                    частности, повышение уровня гражданского сознания
+                    обеспечивает
+                  </p>
+                  <div class="review-card__text-box">
+                    <h6 class="review-card__aspect">Достоинства:</h6>
+                    <span class="review-card__text">Цена и качество</span>
+                  </div>
+                  <div class="review-card__text-box">
+                    <h6 class="review-card__aspect">Недостатки:</h6>
+                    <span class="review-card__text">Не обнаружил</span>
+                  </div>
+                  <div class="review-card__text-box">
+                    <h6 class="review-card__aspect">Ссылки:</h6>
+                    <a
+                      href="#"
+                      class="link-line link-line_red review-card__link"
+                      ><span
+                        >https://www.ozon.ru/context/detail/id/162478613/</span
+                      ></a
+                    >
+                  </div>
+                  <button class="review-card__btn">
+                    <svg class="i-response review-card__btn-icon">
+                      <use xlink:href="./img/sprite.svg#response"></use>
+                    </svg>
+                    Ответить
+                  </button>
+                </div>
+                <div class="review-card">
+                  <h5 class="review-card__author">Валерий</h5>
+                  <div class="review-card__section">
+                    <div class="review-card__stars">
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star _active">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                      <svg class="i-rate-star">
+                        <use xlink:href="./img/sprite.svg#rate-star"></use>
+                      </svg>
+                    </div>
+                    <date class="review-card__date">29.03.2021</date>
+                  </div>
+                  <p class="review-card__desc">
+                    Современные технологии достигли такого уровня, что граница
+                    обучения кадров требует анализа стандартных подходов. В
+                    частности, повышение уровня гражданского сознания
+                    обеспечивает
+                  </p>
+                  <div class="review-card__text-box">
+                    <h6 class="review-card__aspect">Достоинства:</h6>
+                    <span class="review-card__text">Цена и качество</span>
+                  </div>
+                  <div class="review-card__text-box">
+                    <h6 class="review-card__aspect">Недостатки:</h6>
+                    <span class="review-card__text">Не обнаружил</span>
+                  </div>
+                  <div class="review-card__text-box">
+                    <h6 class="review-card__aspect">Ссылки:</h6>
+                    <a
+                      href="#"
+                      class="link-line link-line_red review-card__link"
+                      ><span
+                        >https://www.ozon.ru/context/detail/id/162478613/</span
+                      ></a
+                    >
+                  </div>
+                  <button class="review-card__btn">
+                    <svg class="i-response review-card__btn-icon">
+                      <use xlink:href="./img/sprite.svg#response"></use>
+                    </svg>
+                    Ответить
+                  </button>
+                </div>
+              </div>
+              <button class="link-line link-line_orange reviews-main__view-all">
+                Посмотреть все отзывы
+              </button>
+            </div>
+            <div class="reviews-aside">
+              <h6 class="reviews-aside__title">Оценка пользователей</h6>
+              <div class="reviews-aside-header">
+                <h4 class="reviews-aside-header__average">4,0</h4>
+                <div class="reviews-aside-header__right">
+                  <div class="reviews-aside-header__stars">
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star _active">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                    <svg class="i-rate-star">
+                      <use xlink:href="./img/sprite.svg#rate-star"></use>
+                    </svg>
+                  </div>
+                  <div class="reviews-aside-header__count">Отзывов 189</div>
+                </div>
+              </div>
+              <div class="reviews-aside-body">
+                <div class="reviews-aside-body__section">
+                  <div class="reviews-aside-body__title">5 звезд</div>
+                  <div class="reviews-aside-body__diagram">
+                    <span
+                      data-self-review-count="130"
+                      data-all-review-count="189"
+                      class="reviews-aside-body__active-diagram"
+                    ></span>
+                  </div>
+                </div>
+                <div class="reviews-aside-body__section">
+                  <div class="reviews-aside-body__title">4 звезды</div>
+                  <div class="reviews-aside-body__diagram">
+                    <span
+                      data-self-review-count="50"
+                      data-all-review-count="189"
+                      class="reviews-aside-body__active-diagram"
+                    ></span>
+                  </div>
+                </div>
+                <div class="reviews-aside-body__section">
+                  <div class="reviews-aside-body__title">3 звезды</div>
+                  <div class="reviews-aside-body__diagram">
+                    <span
+                      data-self-review-count="9"
+                      data-all-review-count="189"
+                      class="reviews-aside-body__active-diagram"
+                    ></span>
+                  </div>
+                </div>
+                <div class="reviews-aside-body__section">
+                  <div class="reviews-aside-body__title">2 звезды</div>
+                  <div class="reviews-aside-body__diagram">
+                    <span
+                      data-self-review-count="0"
+                      data-all-review-count="189"
+                      class="reviews-aside-body__active-diagram"
+                    ></span>
+                  </div>
+                </div>
+                <div class="reviews-aside-body__section">
+                  <div class="reviews-aside-body__title">1 звезда</div>
+                  <div class="reviews-aside-body__diagram">
+                    <span
+                      data-self-review-count="0"
+                      data-all-review-count="189"
+                      class="reviews-aside-body__active-diagram"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn_blue reviews-aside__btn">
+                Оставить отзыв
+              </button>
+              <div class="reviews-aside__offer">
+                Получите баллы на скидку за отзыв о покупке!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer-col footer-col-left">
+      <a href="/" class="footer-left__logo">
+        <img src="./img/logo-white.svg" alt="Gift.ru"
+      /></a>
+      <div class="footer-col-left__bottom">
+        <div class="footer-col-left__cards">
+          <div class="footer-col-left__img-wrapper">
+            <img src="./img/visa.svg" alt="visa" class="footer-col-left__img" />
+          </div>
+          <img
+            src="./img/mastercard.svg"
+            alt="mastercard"
+            class="footer-col-left__img"
+          />
+        </div>
+        <div class="footer-col-left__copyright">©Все права защищены</div>
+      </div>
+    </div>
+    <div class="footer-col footer-col-middle">
+      <div class="footer-col-middle__top">
+        <ul class="footer-list">
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Конструктор подарка</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="./faq.html" class="footer-list__text">Вопрос - ответ</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="./articles.html" class="footer-list__text">Статьи</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Доставка</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Оплата</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">О нас</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Бренды</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Гарантии и возврат</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Контакты</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__text">Помощь</a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="scroll-to-top" data-scroll-to-top>
+        <svg class="i-up-arrow">
+          <use xlink:href="./img/sprite.svg#up-arrow"></use>
+        </svg>
+        <span class="scroll-to-top__text">Вверх</span>
+      </button>
+    </div>
+    <div class="footer-col footer-col-right">
+      <ul class="footer-col-right__nav">
+        <li class="footer-col-right__nav-item">
+          <a href="#" class="footer-col-right__nav-icon">
+            <svg class="i-user">
+              <use xlink:href="./img/sprite.svg#user"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-col-right__nav-item">
+          <a href="#" class="footer-col-right__nav-icon">
+            <svg class="i-star">
+              <use xlink:href="./img/sprite.svg#star"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-col-right__nav-item">
+          <a href="#" class="footer-col-right__nav-icon">
+            <svg class="i-heart">
+              <use xlink:href="./img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-col-right__nav-item cart-icon">
+          <a href="#" class="footer-col-right__nav-icon">
+            <svg class="i-cart">
+              <use xlink:href="./img/sprite.svg#cart"></use>
+            </svg>
+            <span class="cart-icon__count">1</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-col-right-bottom">
+        <a href="tel:+74957556983" class="footer-col-right-bottom__contact">
+          <svg class="i-phone">
+            <use xlink:href="./img/sprite.svg#phone"></use>
+          </svg>
+          +74957556983
+        </a>
+        <a
+          href="mailto:nonamemag@gmail.com"
+          class="footer-col-right-bottom__contact"
+        >
+          <svg class="i-mail">
+            <use xlink:href="./img/sprite.svg#mail"></use>
+          </svg>
+          nonamemag@gmail.com
+        </a>
+        <ul class="footer-col-right-bottom__socials">
+          <li class="footer-col-right-bottom__social-item">
+            <a href="#" class="footer-col-right-bottom__social-link">
+              <svg class="i-inst">
+                <use xlink:href="./img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-col-right-bottom__social-item">
+            <a href="#" class="footer-col-right-bottom__social-link">
+              <svg class="i-fb">
+                <use xlink:href="./img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-col-right-bottom__social-item">
+            <a href="#" class="footer-col-right-bottom__social-link">
+              <svg class="i-vk">
+                <use xlink:href="./img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      <div class="catalog-menu-outer">
+  <div class="catalog-menu-inner">
+    <ul class="catalog-menu">
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-glasses">
+              <use xlink:href="./img/sprite.svg#glasses"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Очки</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item" data-nesting-level="2">
+            <button class="catalog-menu__btn" data-open-sub-catalog>
+              <span class="catalog-menu__text">Очки корригирующие</span>
+              <span class="catalog-menu__arrow">
+                <svg class="i-catalog-arrow">
+                  <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+                </svg>
+              </span>
+            </button>
+            <ul class="catalog-sub-menu">
+              <li class="catalog-menu__item">
+                <a href="#" class="catalog-menu__link">
+                  <span class="catalog-menu__text">
+                    Очки корригирующие +1.0
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-menu__item">
+                <a href="#" class="catalog-menu__link">
+                  <span class="catalog-menu__text">
+                    Очки корригирующие +1.5
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-menu__item">
+                <a href="#" class="catalog-menu__link">
+                  <span class="catalog-menu__text">
+                    Очки корригирующие +2.0
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-menu__item">
+                <a href="#" class="catalog-menu__link">
+                  <span class="catalog-menu__text">
+                    Очки корригирующие +2.5
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-menu__item">
+                <a href="#" class="catalog-menu__link">
+                  <span class="catalog-menu__text">
+                    Очки корригирующие +2.5
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-menu__item catalog-menu__back">
+                <button class="catalog-menu__btn" data-back-to-prev-catalog>
+                  <span class="catalog-menu__text">Назад</span>
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"
+                >Очки для работы за компьютером</span
+              >
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text">Очки солнцезащитные</span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text">Очки для водителей</span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-disposable-tableware">
+              <use xlink:href="./img/sprite.svg#disposable-tableware"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Одноразовая посуда</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Cтаканы </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Тарелки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Бумажные салфетки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-box">
+              <use xlink:href="./img/sprite.svg#box"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Упаковка</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Пакеты подарочные </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Упаковочная бумага </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-palette">
+              <use xlink:href="./img/sprite.svg#palette"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Детское творчество</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Раскраски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-fireworks">
+              <use xlink:href="./img/sprite.svg#fireworks"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Товары для праздника</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Гирлянды </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Воздушные шары </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Свечи на торт </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Открытки поздравительные </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Конверт для денег </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Салфетки бумажные </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-bed">
+              <use xlink:href="./img/sprite.svg#bed"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Домашний текстиль</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-stationery">
+              <use xlink:href="./img/sprite.svg#stationery"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Канцтовары</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-mobile">
+              <use xlink:href="./img/sprite.svg#mobile"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Мультимедиа</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-placemats">
+              <use xlink:href="./img/sprite.svg#placemats"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Плейсматы</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-menu__item" data-nesting-level="1">
+        <button class="catalog-menu__btn" data-open-sub-catalog>
+          <span class="catalog-menu__icon">
+            <svg class="i-dishes">
+              <use xlink:href="./img/sprite.svg#dishes"></use>
+            </svg>
+          </span>
+          <span class="catalog-menu__text">Посуда</span>
+          <span class="catalog-menu__arrow">
+            <svg class="i-catalog-arrow">
+              <use xlink:href="./img/sprite.svg#catalog-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <ul class="catalog-sub-menu">
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Колпачки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Маски </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__text"> Елочные игрушки </span>
+            </a>
+          </li>
+          <li class="catalog-menu__item catalog-menu__back">
+            <button class="catalog-menu__btn" data-back-to-prev-catalog>
+              <span class="catalog-menu__text">Назад</span>
+            </button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <div class="product-preview__wrapper" data-product-pop-up>
+  <div class="product-preview__window">
+    <button class="product-preview__close" data-close-product-preview></button>
+    <div class="product-preview__container">
+      <div class="product-preview-slider">
+        <div class="product-preview-slider__header">
+          <div class="product-preview-slider__btn">
+            <button
+              class="btn-arrow"
+              data-carousel-btn="-1"
+              data-corresponding-carousel="product-preview-images"
+            >
+              <svg class="i-common-arrow">
+                <use xlink:href="./img/sprite.svg#common-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="product-preview-slider__middle">
+            <div
+              id="product-preview-images"
+              class="product-preview-slider__images"
+              data-carousel-current-slide="1"
+            ></div>
+          </div>
+          <div class="product-preview-slider__btn">
+            <button
+              class="btn-arrow btn-arrow_right"
+              data-carousel-btn="1"
+              data-corresponding-carousel="product-preview-images"
+            >
+              <svg class="i-common-arrow">
+                <use xlink:href="./img/sprite.svg#common-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          class="carousel-nav"
+          data-carousel-nav
+          data-corresponding-carousel="product-preview-images"
+        ></div>
+      </div>
+      <div class="product-preview-content">
+        <div class="product-preview-content__buttons">
+          <button class="product-preview-content__btn">
+            <svg class="i-share">
+              <use xlink:href="./img/sprite.svg#share"></use>
+            </svg>
+          </button>
+          <button class="product-preview-content__btn">
+            <svg class="i-heart">
+              <use xlink:href="./img/sprite.svg#heart"></use>
+            </svg>
+          </button>
+          <button class="product-preview-content__btn">
+            <svg class="i-star">
+              <use xlink:href="./img/sprite.svg#star"></use>
+            </svg>
+          </button>
+        </div>
+        <h2
+          class="title dark product-preview-content__title"
+          data-product-preview-title
+        ></h2>
+        <div
+          class="
+            product-preview-content__section
+            product-preview-content__section_first
+          "
+        >
+          <div
+            class="product-preview-content__stars"
+            data-product-preview-stars
+          >
+            <svg class="i-rate-star _active">
+              <use xlink:href="./img/sprite.svg#rate-star"></use>
+            </svg>
+            <svg class="i-rate-star _active">
+              <use xlink:href="./img/sprite.svg#rate-star"></use>
+            </svg>
+            <svg class="i-rate-star _active">
+              <use xlink:href="./img/sprite.svg#rate-star"></use>
+            </svg>
+            <svg class="i-rate-star _active">
+              <use xlink:href="./img/sprite.svg#rate-star"></use>
+            </svg>
+            <svg class="i-rate-star _active">
+              <use xlink:href="./img/sprite.svg#rate-star"></use>
+            </svg>
+          </div>
+          <span
+            class="product-preview-content__stars-count"
+            data-product-preview-reviews-count
+          ></span>
+          <div class="product-preview-content__code">
+            Код товара: <span data-product-preview-code></span>
+          </div>
+        </div>
+        <div class="product-preview-content__count">
+          В наличии: <span data-product-preview-count></span> шт
+        </div>
+        <div class="product-preview-content__price">
+          <span data-product-preview-price></span> р.
+        </div>
+        <h6 class="product-preview-content__desc-title">Описание</h6>
+        <p
+          class="product-preview-content__desc-text"
+          data-product-preview-description
+        ></p>
+        <div class="product-preview-content__section">
+          <button class="btn btn_purple product-preview-content__cart-btn">
+            Добавить в корзину
+          </button>
+          <a
+            href="./product-card.html"
+            class="link-line link-line_green product-preview-content__link"
+            >Посмотреть полностью</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>
