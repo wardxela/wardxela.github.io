@@ -1,0 +1,23 @@
+.container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1 + px) {
+    max-width: 1270px;
+  }
+  @media (max-width: $md2 + px) {
+    max-width: 1044px;
+  }
+  @media (max-width: $md3 + px) {
+    max-width: 960px;
+  }
+  @media (max-width: $md4 + px) {
+    max-width: 720px;
+  }
+  @media (max-width: $md5 + px) {
+    max-width: 540px;
+  }
+  @media (max-width: $md6 + px) {
+    max-width: none;
+    padding: 0px 20px;
+  }
+}

@@ -1,0 +1,225 @@
+.philosophy {
+  margin-top: 85px;
+  margin-bottom: 200px;
+  @media (max-width: $md4 + px) {
+    margin-top: 45px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: $md6 + px) {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  &__title {
+    max-width: 80%;
+    margin-bottom: 60px;
+    @media (max-width: $md2 + px) {
+      font-size: 75px;
+    }
+    @media (max-width: $md4 + px) {
+      font-size: 65px;
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+    @media (max-width: $md5 + px) {
+      font-size: 40px;
+    }
+    @media (max-width: $md6 + px) {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__highlight {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 135%;
+    letter-spacing: 0.03em;
+    color: #181818;
+    max-width: 698px;
+    margin-bottom: 60px;
+
+    @media (max-width: $md4 + px) {
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: $md6 + px) {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    display: inline-flex;
+    margin-bottom: 100px;
+    @media (max-width: $md4 + px) {
+      margin-bottom: 50px;
+    }
+    @media (max-width: $md6 + px) {
+      margin-bottom: 25px;
+    }
+  }
+}
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__col {
+    margin-bottom: 20px;
+    @media (max-width: $md4 + px) {
+      flex: 0 0 45%;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__num {
+    font-weight: 900;
+    font-size: 80px;
+    letter-spacing: 0.1em;
+    color: #0000ff;
+
+    &_unit {
+      position: relative;
+      &::after {
+        position: absolute;
+        letter-spacing: 0.1em;
+        top: -5px;
+        right: -20px;
+        content: 'м2';
+        font-weight: 800;
+        font-size: 21px;
+        @media (max-width: $md3 + px) {
+          font-size: 12px;
+          top: -5px;
+          right: -15px;
+        }
+      }
+    }
+    @media (max-width: $md2 + px) {
+      font-size: 60px;
+    }
+    @media (max-width: $md3 + px) {
+      font-size: 45px;
+    }
+    @media (max-width: $md5 + px) {
+      font-size: 32px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: 0.03em;
+    color: #181818;
+    @media (max-width: $md5 + px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.team {
+  margin-bottom: 135px;
+  @media (max-width: $md4 + px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: $md6 + px) {
+    margin-bottom: 45px;
+  }
+  &__title {
+    margin-bottom: 38px;
+    @media (max-width: $md2 + px) {
+      font-size: 60px;
+    }
+    @media (max-width: $md4 + px) {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: $md6 + px) {
+      font-size: 30px;
+    }
+  }
+
+  &__photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+    @media (max-width: $md4 + px) {
+      row-gap: 10px;
+    }
+    @media (max-width: $md6 + px) {
+      row-gap: 5px;
+    }
+  }
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    &_1 {
+      flex: 0 1 67%;
+      @media (max-width: $md6 + px) {
+        flex: 0 1 66%;
+      }
+    }
+    &_2 {
+      flex-direction: column;
+      flex: 0 1 32%;
+    }
+    &_3 {
+      flex: 0 1 100%;
+    }
+  }
+  &__photo {
+    flex-grow: 0;
+    flex-shrink: 1;
+    &_1 {
+      flex-basis: 42%;
+      height: 41%;
+      @media (max-width: $md6 + px) {
+        flex-basis: 100%;
+      }
+    }
+    &_2 {
+      flex-basis: 56%;
+      height: 41%;
+      @media (max-width: $md6 + px) {
+        display: none;
+      }
+    }
+    &_3 {
+      flex-basis: 100%;
+      height: 57%;
+    }
+    &_4 {
+      height: 55%;
+    }
+    &_5 {
+      height: 43%;
+    }
+    &_6 {
+      flex-basis: 31%;
+    }
+    &_7 {
+      flex-basis: 68%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.invite__about {
+  .invite__input {
+    width: 726px;
+    @media (max-width: $md4 + px) {
+      width: 100%;
+    }
+  }
+}

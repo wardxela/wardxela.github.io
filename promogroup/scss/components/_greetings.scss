@@ -1,0 +1,84 @@
+@keyframes greetings {
+  0% {
+  }
+  100% {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+}
+.greetings {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1500;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: blue;
+  font-family: Codec Pro;
+  padding: 146px;
+  animation: greetings 1s ease 2s 1 normal forwards;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  &__author {
+    font-size: 24px;
+    line-height: 115%;
+    color: white;
+
+    opacity: 0.9;
+  }
+  &__logo {
+    mask: url('../img/logo.svg') 0% / 100% no-repeat;
+    background-color: white;
+    width: 691px;
+    height: 107px;
+    margin-bottom: auto;
+    @media (max-width: $md3 + px) {
+      mask-size: 100%;
+      width: 500px;
+      height: 78px;
+    }
+    @media (max-width: $md4 + px) {
+      width: 463px;
+      height: 72px;
+    }
+    @media (max-width: $md5 + px) {
+      width: 235px;
+      height: 37px;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 90px;
+    line-height: 115%;
+    letter-spacing: 0.03em;
+    margin-top: 15%;
+    margin-bottom: 11px;
+    @media (max-width: $md3 + px) {
+      font-size: 70px;
+      margin-top: 20%;
+    }
+    @media (max-width: $md4 + px) {
+      font-size: 50px;
+      margin-top: 25%;
+    }
+    @media (max-width: $md5 + px) {
+      font-size: 32px;
+      margin-top: 40%;
+    }
+  }
+  @media (max-width: $md3 + px) {
+    padding: 120px;
+  }
+  @media (max-width: $md4 + px) {
+    padding: 90px;
+  }
+  @media (max-width: $md5 + px) {
+    padding: 40px 50px;
+  }
+  @media (max-width: $md6 + px) {
+    padding: 40px 20px;
+  }
+}

@@ -1,0 +1,141 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 160%;
+  outline: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0px 40px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  cursor: pointer;
+  background: #0000ff;
+  transition: 0.1s ease;
+  border: 1px solid blue;
+  &:hover {
+    background: transparent;
+    color: #0000ff;
+  }
+  &_transparent {
+    background: transparent;
+    text-transform: none;
+    color: #0000ff;
+    font-weight: 600;
+    font-size: 15px;
+    &:hover {
+      background: blue;
+      color: #fff;
+    }
+  }
+  @media (max-width: $md6 + px) {
+    width: 100%;
+    font-size: 13px;
+    padding: 0 20px;
+  }
+}
+
+.invite {
+  &__title {
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    color: #333333;
+    margin-bottom: 65px;
+    @media (max-width: $md1 + px) {
+      font-size: 60px;
+    }
+    @media (max-width: $md2 + px) {
+      font-size: 45px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: $md5 + px) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: $md6 + px) {
+      font-size: 18px;
+    }
+  }
+  &__input {
+    display: block;
+    padding: 15px 21px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    transition: 0.2s ease;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: 0.05em;
+      color: #9d9d9d;
+      @media (max-width: $md5 + px) {
+        font-size: 13px;
+      }
+    }
+    &:hover {
+      border-bottom-color: #bcbcbc;
+    }
+    &:hover::placeholder {
+      color: #737373;
+    }
+    &:focus {
+      border-bottom-color: #0000ff;
+
+      &::placeholder {
+        color: #181818;
+      }
+    }
+  }
+  &__input + &__input {
+    margin-top: 29px;
+    @media (max-width: $md4 + px) {
+      margin-top: 19px;
+    }
+  }
+  &__projects {
+    input {
+      width: 70%;
+      @media (max-width: $md5 + px) {
+        width: 100%;
+      }
+    }
+  }
+  &__warn {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+    color: #4a4a4a;
+    max-width: 559px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    a {
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      text-decoration-line: underline;
+      color: #0000ff;
+      &:hover {
+        text-decoration-line: none;
+      }
+    }
+    @media (max-width: $md5 + px) {
+      font-size: 11px;
+    }
+  }
+  &__btn {
+    margin-bottom: 140px;
+    @media (max-width: $md4 + px) {
+      margin-bottom: 70px;
+    }
+    @media (max-width: $md6 + px) {
+      margin-bottom: 25px;
+    }
+  }
+}

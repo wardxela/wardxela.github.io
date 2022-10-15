@@ -1,0 +1,61 @@
+@import './normalize';
+@import './fonts';
+@import './variables';
+@import './container';
+/* Main styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Montserrat;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h1 {
+  font-family: Codec Pro;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #181818;
+}
+h3 {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  color: #181818;
+}
+h5 {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+a {
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #6d6d6d;
+}
+li {
+  list-style: none;
+}
+
+@import './components/header';
+@import './components/footer';
+@import './components/blocks';

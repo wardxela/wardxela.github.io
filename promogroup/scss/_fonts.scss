@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Codec Pro';
+  src: url('../fonts/CodecPro-Heavy.eot');
+  src: local('Codec Pro Heavy'), local('CodecPro-Heavy'),
+    url('../fonts/CodecPro-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CodecPro-Heavy.woff2') format('woff2'),
+    url('../fonts/CodecPro-Heavy.woff') format('woff'),
+    url('../fonts/CodecPro-Heavy.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Codec Pro';
+  src: url('../fonts/CodecPro-Bold.eot');
+  src: local('Codec Pro Bold'), local('CodecPro-Bold'),
+    url('../fonts/CodecPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CodecPro-Bold.woff2') format('woff2'),
+    url('../fonts/CodecPro-Bold.woff') format('woff'),
+    url('../fonts/CodecPro-Bold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
